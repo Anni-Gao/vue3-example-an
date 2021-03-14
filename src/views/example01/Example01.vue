@@ -1,8 +1,9 @@
 <template>
   <div>
-    <h1>HelloWorld</h1>
+    <h1>Components&Router</h1>
+    <p>HelloWorld</p>
     <hr />
-    <h1>Computed</h1>
+    <h1>Data&Methods&Comeputed</h1>
     {{ message }}
     <p>文本内容倒置</p>
     {{ reverseMessage }}
@@ -10,17 +11,17 @@
     {{ user.name }}
     <br />
     <button type="button" @click="changeName">changeName</button>
-    <br />
-    {{ user.insertTime }}
-    <br />
-    {{ myDate }}
+    <hr />
+    {{ user.address }}
     <br />
     <button @click="addAddress">addAddress</button>
     <br />
-    {{ user.address }}
     <hr />
+    {{ user.insertTime }}
+    <p>基于计算属性方法替换</p>
+    {{ myDate }}
+    <br />
     {{ myReplace(user.insertTime) }}
-    <hr />
   </div>
 </template>
 <script lang="ts">
