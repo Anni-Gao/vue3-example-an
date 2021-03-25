@@ -1,4 +1,3 @@
-/* eslint-disable vue/no-side-effects-in-computed-properties */
 <template>
   <div>
     <p style="font-weight: bold">
