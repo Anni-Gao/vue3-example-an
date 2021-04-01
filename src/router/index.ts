@@ -17,6 +17,44 @@ const routes: Array<RouteRecordRaw> = [
     path: "/homework01",
     name: "Homework01",
     component: () => import("@/views/homework01/Homework01.vue")
+  },
+  {
+    props: true,
+    path: "/homework02",
+    name: "Homework02",
+    component: () => import("@/views/homework02/Home.vue"),
+    children: [
+      {
+        // 空，默认加载的组件。
+        // 即路由至/Food.vue，router-view直接加载此组件。也可不设置
+        props: true,
+        path: "foods",
+        component: () => import("@/views/homework02/Foods.vue")
+      },
+      {
+        // 声明相对路径。则路由到此组件的路径包含父组件路径
+        // /homework02/local
+        props: true,
+        path: "location",
+        components: {
+          default: () => import("@/views/homework02/Location.vue")
+        }
+      },
+      {
+        props: true,
+        path: "orders",
+        components: {
+          default: () => import("@/views/homework02/Orders.vue")
+        }
+      },
+      {
+        props: true,
+        path: "shops/:sid",
+        components: {
+          default: () => import("@/views/homework02/Shops.vue")
+        }
+      }
+    ]
   }
 ];
 

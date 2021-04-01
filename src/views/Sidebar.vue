@@ -8,6 +8,7 @@
     <hr />
     <ul>
       <li><router-link to="/homework01">Homework01</router-link></li>
+      <li><router-link to="/homework02">Homework02</router-link></li>
     </ul>
   </div>
 </template>
