@@ -4,6 +4,7 @@ export const LIST_GITHUBREPOS = "LIST_GITHUBREPOS";
 export const LIST_USER_COURSES = "LIST_USER_COURSES";
 export const LOGIN = "LOGIN";
 export const GET_HOME = "GET_HOME";
+
 export const UPDATE_EXCEPTION = "GET_EXCEPTION";
 
 // getters

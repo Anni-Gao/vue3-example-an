@@ -19,8 +19,8 @@ export interface State {
 
 const myState: State = {
   user: {
-    name: "BO",
-    address: "956",
+    name: "An",
+    address: "nefu",
     level: 1
   },
   courses: [],
